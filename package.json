@@ -4,7 +4,10 @@
   "description": "VNC-based remote browser system for cloud VM (Oracle Free Tier)",
   "main": "server/index.js",
   "scripts": {
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+    "dev": "npm run start:vnc && npm start",
+    "install:env": "bash scripts/install.sh",
+    "start:vnc": "bash scripts/start.sh"
   },
   "dependencies": {
     "express": "^4.18.2"
